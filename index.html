@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="inicio">
+      <h1>Mis Accesos Favoritos</h1>
+      <p>Tus accesos favoritos en un solo lugar</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Buscador</h2>
+
+        <form
+          action="https://www.google.com/search"
+          method="get"
+          target="_blank"
+        >
+          <label for="q">Buscar en Google</label>
+          <input
+            type="search"
+            id="q"
+            name="q"
+            placeholder="Escribe tu búsqueda"
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Favoritos Rápidos</h2>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="https://chatgpt.com" target="_blank">ChatGPT</a>
+            </li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://gmail.com" target="_blank">Gmail</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <hr />
+
+      <section id="categorias">
+        <h2>Categorías</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#">-</a></li>
+            <li><a href="#trabajo">Trabajo</a></li>
+            <li><a href="#ia">IA</a></li>
+            <li><a href="#social">Social</a></li>
+            <li><a href="#entretenimiento">Entretenimiento</a></li>
+            <li><a href="#finanzas">Finanzas</a></li>
+            <li><a href="#herramientas">Herramientas</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Accesos Directos</h2>
+
+        <article>
+          <h3>ChatGPT</h3>
+          <p>Asistente de inteligencia artificial</p>
+          <a href="https://chatgpt.com" target="_blank">Abrir</a>
+        </article>
+
+        <article>
+          <h3>GitHub</h3>
+          <p>Repositorios y proyectos</p>
+          <a href="https://github.com" target="_blank">Abrir</a>
+        </article>
+
+        <article>
+          <h3>YouTube</h3>
+          <p>Videos y tutoriales</p>
+          <a href="https://youtube.com" target="_blank">Abrir</a>
+        </article>
+
+        <article>
+          <h3>Google Drive</h3>
+          <p>Almacenamiento en la nube</p>
+          <a href="https://drive.google.com" target="_blank">Abrir</a>
+        </article>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Agregar Nuevo Acceso</h2>
+
+        <form>
+          <p>
+            <label for="nombre">Nombre</label><br />
+            <input type="text" id="nombre" name="nombre" />
+          </p>
+
+          <p>
+            <label for="url">URL</label><br />
+            <input type="url" id="url" name="url" />
+          </p>
+
+          <p>
+            <label for="categoria">Categoría</label><br />
+            <select id="categoria" name="categoria">
+              <option>Trabajo</option>
+              <option>IA</option>
+              <option>Social</option>
+              <option>Entretenimiento</option>
+              <option>Finanzas</option>
+              <option>Herramientas</option>
+            </select>
+          </p>
+
+          <button type="submit">Guardar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Página de Inicio Personal</p>
+      <p><a href="#inicio">Volver al inicio</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+input {
+  font-style: italic;
+  padding: 8px;
+  width: 250px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.icons a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  color: brown;
+}
