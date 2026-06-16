@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+}
+
+button {
+  margin: 20px auto;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.icons a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
