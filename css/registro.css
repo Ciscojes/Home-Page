@@ -28,8 +28,9 @@ button {
 }
 
 .icons a {
-  display: block;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2rem;
 }
 
 a:hover {
