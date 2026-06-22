@@ -1,27 +1,110 @@
+/* FONDO */
 body {
+  margin: 0;
+  min-height: 100vh;
   text-align: center;
+  color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/fondo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* FORMULARIO */
+form {
+  width: 350px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+}
+
+/* TITULO */
+h1 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* ETIQUETAS */
 label {
   display: block;
   margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
+/* CAMPOS DE TEXTO */
 input {
-  width: 200px;
+  width: 250px;
   padding: 10px;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
 }
 
+/* INPUT SELECCIONADO */
+input:focus {
+  outline: 2px solid #00bfff;
+}
+
+/* BOTON */
 button {
-  margin: 20px auto;
-  display: block;
   margin-top: 20px;
   padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* EFECTO BOTON */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* TEXTO DE REDES */
+.social-text {
+  margin-top: 20px;
+}
+
+/* ICONOS */
+.icons {
+  margin-top: 15px;
 }
 
 .icons a {
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
   font-size: 2rem;
+  color: aliceblue;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+/* EFECTO ICONOS */
+.icons a:hover {
+  color: brown;
+  transform: translateY(-5px);
+}
+
+/* ENLACE REGISTRO */
+.registro {
+  margin-top: 20px;
+}
+
+.registro a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.registro a:hover {
+  color: brown;
 }
