@@ -3,137 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Dashboard - Mis Accesos Favoritos</title>
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header id="inicio">
-      <h1>Mis Accesos Favoritos</h1>
-      <p>Tus accesos favoritos en un solo lugar</p>
+    <header>
+      <div>
+        <span>Mis Accesos</span>
+      </div>
+
+      <div>
+        <span>¡Hola, <strong>Usuario</strong>!</span>
+
+        <a href="login.html">
+          <span>Salir</span>
+        </a>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h2>Buscador</h2>
+      <aside>
+        <section>
+          <h2>Buscador</h2>
 
-        <form
-          action="https://www.google.com/search"
-          method="get"
-          target="_blank"
-        >
-          <label for="q">Buscar en Google</label>
-          <input
-            type="search"
-            id="q"
-            name="q"
-            placeholder="Escribe tu búsqueda"
-          />
-          <button type="submit">Buscar</button>
-        </form>
-      </section>
+          <form
+            action="https://www.google.com/search"
+            method="get"
+            target="_blank"
+          >
+            <div>
+              <input
+                type="search"
+                name="q"
+                placeholder="Buscar en Google..."
+                required
+              />
 
-      <hr />
+              <button type="submit">Buscar</button>
+            </div>
+          </form>
+        </section>
 
-      <section>
-        <h2>Favoritos Rápidos</h2>
+        <section>
+          <h2>Nuevo Acceso</h2>
 
-        <nav>
-          <ul>
-            <li>
-              <a href="https://chatgpt.com" target="_blank">ChatGPT</a>
-            </li>
-            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-            <li><a href="https://gmail.com" target="_blank">Gmail</a></li>
-          </ul>
-        </nav>
-      </section>
+          <form>
+            <div>
+              <label>
+                Nombre del Sitio
 
-      <hr />
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Ej. GitHub"
+                  required
+                />
+              </label>
+            </div>
 
-      <section id="categorias">
-        <h2>Categorías</h2>
+            <div>
+              <label>
+                URL
 
-        <nav>
-          <ul>
-            <li><a href="#trabajo">Trabajo</a></li>
-            <li><a href="#ia">IA</a></li>
-            <li><a href="#social">Social</a></li>
-            <li><a href="#entretenimiento">Entretenimiento</a></li>
-            <li><a href="#finanzas">Finanzas</a></li>
-            <li><a href="#herramientas">Herramientas</a></li>
-          </ul>
-        </nav>
-      </section>
+                <input
+                  type="url"
+                  name="url"
+                  placeholder="https://ejemplo.com"
+                  required
+                />
+              </label>
+            </div>
 
-      <hr />
+            <div>
+              <label>
+                Categoría
 
-      <section>
-        <h2>Accesos Directos</h2>
+                <select name="categoria" required>
+                  <option value="Trabajo">Trabajo</option>
+                  <option value="IA">IA</option>
+                  <option value="Social">Social</option>
+                  <option value="Entretenimiento">Entretenimiento</option>
+                  <option value="Finanzas">Finanzas</option>
+                  <option value="Herramientas">Herramientas</option>
+                </select>
+              </label>
+            </div>
 
-        <article>
-          <h3>ChatGPT</h3>
-          <p>Asistente de inteligencia artificial</p>
-          <a href="https://chatgpt.com" target="_blank">Abrir</a>
-        </article>
-
-        <article>
-          <h3>GitHub</h3>
-          <p>Repositorios y proyectos</p>
-          <a href="https://github.com" target="_blank">Abrir</a>
-        </article>
-
-        <article>
-          <h3>YouTube</h3>
-          <p>Videos y tutoriales</p>
-          <a href="https://youtube.com" target="_blank">Abrir</a>
-        </article>
-
-        <article>
-          <h3>Google Drive</h3>
-          <p>Almacenamiento en la nube</p>
-          <a href="https://drive.google.com" target="_blank">Abrir</a>
-        </article>
-      </section>
-
-      <hr />
+            <button type="submit">Guardar Acceso</button>
+          </form>
+        </section>
+      </aside>
 
       <section>
-        <h2>Agregar Nuevo Acceso</h2>
+        <section>
+          <button>Todos</button>
+          <button>Trabajo</button>
+          <button>IA</button>
+          <button>Social</button>
+          <button>Entretenimiento</button>
+          <button>Finanzas</button>
+          <button>Herramientas</button>
+        </section>
 
-        <form>
-          <p>
-            <label for="nombre">Nombre</label><br />
-            <input type="text" id="nombre" name="nombre" />
-          </p>
+        <section>
+          <h2>Tus Accesos Directos</h2>
 
-          <p>
-            <label for="url">URL</label><br />
-            <input type="url" id="url" name="url" />
-          </p>
+          <div>
+            <!-- Aquí se agregarán los accesos -->
+          </div>
 
-          <p>
-            <label for="categoria">Categoría</label><br />
-            <select id="categoria" name="categoria">
-              <option>Trabajo</option>
-              <option>IA</option>
-              <option>Social</option>
-              <option>Entretenimiento</option>
-              <option>Finanzas</option>
-              <option>Herramientas</option>
-            </select>
-          </p>
+          <div>
+            <p>Aún no tienes accesos guardados en esta categoría.</p>
 
-          <button type="submit">Guardar</button>
-        </form>
+            <span>
+              ¡Utiliza el formulario lateral para agregar tu primer acceso!
+            </span>
+          </div>
+        </section>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 - Página de Inicio Personal</p>
-      <p><a href="#inicio">Volver al inicio</a></p>
+      <p>&copy; 2026 - Página de Inicio Personalizable</p>
+
+      <p>Desarrollado con código limpio.</p>
     </footer>
   </body>
 </html>

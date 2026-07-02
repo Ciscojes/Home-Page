@@ -1,0 +1,165 @@
+/* Estilos unificados para las páginas de Autenticación (Login y Registro) */
+
+body.auth-page {
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/fondo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR DEL FORMULARIO DE AUTENTICACIÓN */
+.auth-form {
+  width: 350px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* TÍTULO DEL FORMULARIO */
+.auth-title {
+  font-size: 40px; /* Reducido ligeramente para evitar desbordes en móviles */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ETIQUETAS DE LOS CAMPOS */
+.auth-label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  text-align: left; /* Alineado a la izquierda para mejor lectura de formularios */
+  padding-left: 20px; /* Alineación con los campos de texto */
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* CAMPOS DE ENTRADA (INPUTS) */
+.auth-input {
+  width: 250px;
+  padding: 10px;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* ESTADO DE ENFOQUE DEL INPUT */
+.auth-input:focus {
+  outline: 2px solid #00bfff;
+}
+
+/* BOTÓN PRINCIPAL */
+.auth-button {
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #00bfff;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER EN BOTÓN */
+.auth-button:hover {
+  background-color: #0099cc;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4);
+}
+
+/* TEXTO DE INTRODUCCIÓN A REDES SOCIALES */
+.auth-social-text {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* CONTENEDOR DE ICONOS DE REDES SOCIALES */
+.auth-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.auth-icons a {
+  display: inline-block;
+  font-size: 2rem;
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER EN ICONOS */
+.auth-icons a:hover {
+  color: #00bfff; /* Cambiado de marrón a celeste para mayor armonía con la paleta de colores */
+  transform: translateY(-5px);
+}
+
+/* TEXTO DE CAMBIO DE PÁGINA (SWITCH) */
+.auth-switch {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.auth-switch a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.auth-switch a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* MENSAJES DE ERROR EN LA AUTENTICACIÓN */
+.auth-error {
+  background-color: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  display: none; /* Se activa con JavaScript */
+}
+
+/* Animación de sacudida (Shake) para errores */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
